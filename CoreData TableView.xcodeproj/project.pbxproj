@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40484F801CD7010200EF7D9D /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40484F7F1CD7010200EF7D9D /* CDHelper.swift */; };
+		40484F831CD7011F00EF7D9D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40484F811CD7011F00EF7D9D /* Model.xcdatamodeld */; };
+		40484F861CD7019300EF7D9D /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40484F841CD7019300EF7D9D /* User+CoreDataProperties.swift */; };
+		40484F871CD7019300EF7D9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40484F851CD7019300EF7D9D /* User.swift */; };
 		40694E101CD3217C00A27659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40694E0F1CD3217C00A27659 /* AppDelegate.swift */; };
 		40694E121CD3217C00A27659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40694E111CD3217C00A27659 /* ViewController.swift */; };
 		40694E151CD3217C00A27659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40694E131CD3217C00A27659 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40484F7F1CD7010200EF7D9D /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
+		40484F821CD7011F00EF7D9D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		40484F841CD7019300EF7D9D /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		40484F851CD7019300EF7D9D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		40694E0C1CD3217C00A27659 /* CoreData TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData TableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40694E0F1CD3217C00A27659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40694E111CD3217C00A27659 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +46,8 @@
 		40694E031CD3217C00A27659 = {
 			isa = PBXGroup;
 			children = (
+				40484F841CD7019300EF7D9D /* User+CoreDataProperties.swift */,
+				40484F851CD7019300EF7D9D /* User.swift */,
 				40694E0E1CD3217C00A27659 /* CoreData TableView */,
 				40694E0D1CD3217C00A27659 /* Products */,
 			);
@@ -54,6 +64,8 @@
 		40694E0E1CD3217C00A27659 /* CoreData TableView */ = {
 			isa = PBXGroup;
 			children = (
+				40484F7F1CD7010200EF7D9D /* CDHelper.swift */,
+				40484F811CD7011F00EF7D9D /* Model.xcdatamodeld */,
 				40694E0F1CD3217C00A27659 /* AppDelegate.swift */,
 				40694E111CD3217C00A27659 /* ViewController.swift */,
 				40694E131CD3217C00A27659 /* Main.storyboard */,
@@ -96,6 +108,7 @@
 				TargetAttributes = {
 					40694E0B1CD3217C00A27659 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = L5P64RN6V6;
 					};
 				};
 			};
@@ -137,6 +150,10 @@
 			files = (
 				40694E121CD3217C00A27659 /* ViewController.swift in Sources */,
 				40694E101CD3217C00A27659 /* AppDelegate.swift in Sources */,
+				40484F871CD7019300EF7D9D /* User.swift in Sources */,
+				40484F801CD7010200EF7D9D /* CDHelper.swift in Sources */,
+				40484F861CD7019300EF7D9D /* User+CoreDataProperties.swift in Sources */,
+				40484F831CD7011F00EF7D9D /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "CoreData TableView/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "no.bearroast.CoreData-TableView";
@@ -260,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "CoreData TableView/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "no.bearroast.CoreData-TableView";
@@ -286,8 +305,22 @@
 				40694E201CD3217C00A27659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		40484F811CD7011F00EF7D9D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				40484F821CD7011F00EF7D9D /* Model.xcdatamodel */,
+			);
+			currentVersion = 40484F821CD7011F00EF7D9D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 40694E041CD3217C00A27659 /* Project object */;
 }
